@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DescribeLicensesResponse xmlns="http://ec2.amazonaws.com/doc/2010-06-15/">
+  <ResponseMetadata>
+    <RequestId>string</RequestId>
+  </ResponseMetadata>
+  <DescribeLicensesResult>
+    <!--1 or more repetitions:-->
+    <License>
+      <LicenseId>string</LicenseId>
+      <Type>string</Type>
+      <Pool>string</Pool>
+      <!--1 or more repetitions:-->
+      <LicenseCapacity>
+        <Capacity>3</Capacity>
+        <InstanceCapacity>3</InstanceCapacity>
+        <State>string</State>
+        <!--Optional:-->
+        <EarliestAllowedDeactivationTime>string</EarliestAllowedDeactivationTime>
+      </LicenseCapacity>
+    </License>
+  </DescribeLicensesResult>
+</DescribeLicensesResponse>
